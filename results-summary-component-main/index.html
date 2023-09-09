@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Metadata for character set and responsive design -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  />
+  <!-- Favicon for the website -->
+
+  <title>Frontend Mentor | Results summary component</title>
+  <!-- Page title -->
+
+  <!-- Font stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- You can customize or remove these styles -->
+
+  <!-- CSS styles for the page -->
+  <style>
+    /* Attribution styles */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Body font */
+    body {
+      font-family: "Hanken Grotesk", sans-serif;
+    }
+
+    /* Container styles */
+    .container {
+      border-radius: 10%;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+    
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    /* Sub-container styles */
+    .sub-container {
+      flex: 1;
+      border-radius: 10%;
+    }
+
+    /* Sub-container 1 styles */
+    #sub-container-1 {
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      box-shadow: 5px 1px 0px 0px;
+      color: white;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+    }
+
+    /* Inner circle styles */
+    .inner-circle {
+      border-radius: 50%;
+      background: linear-gradient(
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+      );
+      width: 180px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Sub-container 2 styles */
+    #sub-container-2 {
+      font-size: 18px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 800;
+    }
+
+    /* List styles */
+    ul {
+      list-style: none;
+      padding: 0px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      border-radius: 5%;
+      margin: 10px 10px 10px 0px;
+    }
+
+    span {
+      font-weight: 500;
+      color: hsl(230deg 9.68% 63.53%);
+    }
+
+    /* Button styles */
+    button {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(224, 30%, 27%);
+      padding: 16px;
+      margin: 18px;
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: 18px;
+      border-radius: 25%;
+      font-weight: 500;
+      width: -webkit-fill-available;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* Change to column layout */
+        width: 100%; /* Take full width of the screen */
+        height: -webkit-fill-available;
+      }
+
+      .sub-container {
+        margin-bottom: 20px; /* Add spacing between sub-containers */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 1st block -->
+    <div class="sub-container" id="sub-container-1">
+      <p style="font-size: 22px; font-weight: 500">Your Result</p>
+      <div class="inner-circle">
+        <p style="font-size: 42px; font-weight: 800; line-height: 1px">76</p>
+        <p
+          style="
+            padding: 0px;
+            margin-top: 0px;
+            font-weight: 500;
+            color: hsl(252, 100%, 67%);
+          "
+        >
+          of 100
+        </p>
+      </div>
+      <p style="font-size: 32px">Great</p>
+      <p style="padding: 10px; color: hsl(252, 100%, 67%)">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+
+    <!-- 2nd block -->
+    <div class="sub-container" id="sub-container-2">
+      <p>Summary</p>
+
+      <ul>
+        <li
+          style="
+            background-color: hsl(6deg 100% 98.04%);
+            color: hsl(0, 100%, 67%);
+          "
+        >
+          <img src="./assets/images/icon-reaction.svg" alt="reaction image" />
+          <p>Reaction</p>
+          <p style="color: black">80 / <span>100</span></p>
+        </li>
+        <li
+          style="
+            background-color: hsl(41.54deg 100% 97.45%);
+            color: hsl(39, 100%, 56%);
+          "
+        >
+          <img src="./assets/images/icon-memory.svg" alt="memory image" />
+          <p>Memory</p>
+          <p style="color: black">92 / <span>100</span></p>
+        </li>
+        <li
+          style="
+            background-color: hsl(173.33deg 52.94% 96.67%);
+            color: hsl(166, 100%, 37%);
+          "
+        >
+          <img src="./assets/images/icon-verbal.svg" alt="verbal image" />
+          <p>Verbal</p>
+          <p style="color: black">61 / <span>100</span></p>
+        </li>
+        <li
+          style="
+            background-color: hsl(240deg 71.43% 97.25%);
+            color: hsl(234, 85%, 45%);
+          "
+        >
+          <img src="./assets/images/icon-visual.svg" alt="visual image" />
+          <p>Visual</p>
+          <p style="color: black">72 / <span>100</span></p>
+        </li>
+      </ul>
+      <button type="button">Continue</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <br />
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Abhishek Shah</a>.
+  </div>
+</body>
+</html>
