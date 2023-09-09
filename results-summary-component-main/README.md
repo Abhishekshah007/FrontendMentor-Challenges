@@ -27,8 +27,8 @@ This project is a Results Summary Component developed as part of a challenge fro
 
 ### Links
 
-- [Live Demo](your-live-demo-link)
-- [GitHub Repository](your-github-repo-link)
+- [Live Demo]((https://results-summary-component-one-tau.vercel.app/))
+- [GitHub Repository]((https://github.com/Abhishekshah007/FrontendMentor-Challenges/edit/master/results-summary-component-main/))
 
 ## My Process
 
