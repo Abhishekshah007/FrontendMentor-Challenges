@@ -19,7 +19,10 @@ This repository contains a simple HTML and CSS code for a QR code component. The
 
 ### Screenshot
 
-![Screenshot](path-to-screenshot.png)
+![Screenshot](![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/2f333a61-c7f0-45aa-b31f-2cbfa7edbf0a)
+)
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/a340a88c-4809-4272-8a16-a2786f4a8ff8) [mobile]
+
 
 ### Links
 
