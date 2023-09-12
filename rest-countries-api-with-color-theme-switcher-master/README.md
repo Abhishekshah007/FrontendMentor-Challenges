@@ -1,4 +1,4 @@
-![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/aa965f79-fcbb-463e-8b74-65e58699c09d)# REST Countries API with Color Theme Switcher
+# REST Countries API with Color Theme Switcher
 
 ## Overview
 
