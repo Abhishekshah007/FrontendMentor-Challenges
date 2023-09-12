@@ -24,9 +24,13 @@ The challenge was to create a responsive product preview card using HTML and CSS
 
 ### Screenshot
 
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/aa0f623f-a74f-4086-96b1-4f60c5253ba8)
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/6e960ce3-f1d3-4bc4-a74a-86655f01fad2)
+
+
 ### Links
 
-- [Live Demo](link-to-live-demo)
+- [Live Demo](https://abhishekshah007.github.io/FrontendMentor-Challenges/product-preview-card-component-main/)
 
 ---
 
