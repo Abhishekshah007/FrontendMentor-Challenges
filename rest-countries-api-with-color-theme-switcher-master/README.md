@@ -18,12 +18,13 @@ You can find the challenge details on [Frontend Mentor](https://www.frontendment
 
 ## Screenshot
 
-![Screenshot of the project](./screenshot.png)
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/4176253b-3ead-450b-8bca-c025280fa68a)
+
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/a332849a-7b46-43be-b74c-b118dbca111c)
 
 ## Links
 
-- [Live Demo](#) - Add a link to your live project here.
-- [Frontend Mentor Challenge](#) - Link to the challenge on Frontend Mentor.
+- [Live Demo](https://frontend-mentor-challenges-three-nu.vercel.app/) 
 
 ## My Process
 
