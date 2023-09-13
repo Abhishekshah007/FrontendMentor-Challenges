@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <style>
+      body {
+        background: url("./assets/home/background-home-desktop.jpg");
+        background-size: cover;
+      }
+
+      .container {
+        padding: 3.9%;
+      }
+
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 96px;
+      }
+
+      ul {
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+        width: 830px;
+        height: 96px;
+        flex-shrink: 0;
+        align-items: center;
+      }
+
+      li:hover {
+        /* line-height: 1px; */
+        text-decoration: underline;
+      }
+
+      li {
+        color: #fff;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        display: flex;
+        width: 150px;
+        height: 19px;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 14px;
+        flex-shrink: 0;
+      }
+
+      span {
+        color: #fff;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.7px;
+      }
+      hr {
+        width: 685px;
+        height: 1px;
+        flex-shrink: 0;
+        opacity: 0.2515;
+        background: #fff;
+      }
+
+      .content {
+        display: inline-flex;
+        padding-right: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        margin-left: 12%;
+        margin-top: 12%;
+      }
+
+      .circle {
+        width: 274px;
+        height: 274px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./assets/shared/logo.svg" alt="logo" />
+        <hr />
+        <nav>
+          <ul>
+            <li><a href="/"><span>00</span> Home</a></li>
+            <li><a href="./destination.html"><span>01</span> Destination</a></li>
+            <li><a href="./crew-commander.html"><span>02</span> Crew</a></li>
+            <li><a href="./technology-capsule.html"><span>03</span> Technology</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <p
+          style="
+            color: #d0d6f9;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0px;
+            line-height: normal;
+            letter-spacing: 4.725px;
+            padding: 0px;
+          "
+        >
+          So, you want to travel to
+        </p>
+        <p
+          style="
+            color: #fff;
+            font-family: Bellefair;
+            font-size: 150px;
+            font-style: normal;
+            font-weight: 400;
+            padding: 0px;
+            font-variant-caps: all-petite-caps;
+            line-height: normal;
+            margin: 0px;
+          "
+        >
+          Space
+        </p>
+        <p
+          style="
+            color: #d0d6f9;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            margin: 0px;
+            padding: 0px;
+            line-height: 32px;
+            width: 444px;
+          "
+        >
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+        <div
+          class="circle-content"
+          style="position: fixed; z-index: 999; margin: 1000px"
+        >
+          <div class="circle">
+            <p
+              style="
+                color: #0b0d17;
+                font-family: Bellefair;
+                font-size: 32px;
+                font-style: normal;
+                /* margin: 81px; */
+                text-align-last: center;
+                font-weight: 400;
+                /* line-height: normal; */
+                letter-spacing: 2px;
+                margin-top: 175px;
+                line-height: 260px;
+              "
+            >
+              Explore
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

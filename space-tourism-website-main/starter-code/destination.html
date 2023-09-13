@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space Tourism Website</title>
+  <style>
+    body {
+      background: url("./assets/destination/background-destination-desktop.jpg") no-repeat center/cover;
+      margin: 0;
+    }
+
+    .container {
+      padding: 3.9%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 96px;
+    }
+
+    ul {
+      color: white;
+      list-style: none;
+      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.774227142333984px);
+      width: 830px;
+      height: 96px;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+
+    li {
+      color: #fff;
+      font-family: Barlow Condensed;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 2.7px;
+      display: flex;
+      width: 150px;
+      height: 19px;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    span {
+      color: #fff;
+      font-family: Barlow Condensed;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 2.7px;
+    }
+
+    hr {
+      width: 450;
+      height: 1px;
+      opacity: 0.2515;
+      background: #fff;
+      margin: 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sub-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+      margin-left: 100px;
+      color: #fff;
+      font-family: Barlow Condensed;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 4.725px;
+      margin-top: 80px;
+      text-transform: uppercase;
+    }
+
+    .slider-content {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-container {
+      width: 445px;
+      height: 445px;
+      margin-left: 150px;
+    }
+
+    .image-data {
+      margin-left: 350px;
+    }
+
+    .destination-list {
+      padding: 0;
+      margin: 0;
+    }
+
+    .destination-list ul {
+      width: 285.5px;
+      height: 34px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .destination-list li {
+      color: #fff;
+    }
+
+    .destination-list p {
+      color: #FFF;
+      font-family: Bellefair;
+      margin: 10px;
+      font-size: 100px;
+      font-weight: 400;
+      line-height: normal;
+      padding: 0;
+    }
+
+    .description {
+      color: #D0D6F9;
+      font-family: Barlow;
+      font-size: 18px;
+      margin: 0;
+      font-weight: 400;
+      line-height: 32px;
+      width: 444px;
+      padding: 0;
+    }
+
+    .info {
+      color: #D0D6F9;
+      font-family: Barlow Condensed;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.362px;
+      text-transform: uppercase;
+    }
+
+    .dataContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="./assets/shared/logo.svg" alt="logo">
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="/"><span>00</span> Home</a></li>
+          <li><a href="./destination.html"><span>01</span> Destination</a></li>
+          <li><a href="./crew-commander.html"><span>02</span> Crew</a></li>
+          <li><a href="./technology-capsule.html"><span>03</span> Technology</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sub-heading">
+      <p><span>01</span> Pick your destination</p>
+    </div>
+
+    <div class="slider-content">
+      <div class="image-container">
+        <img src="./assets/destination/image-moon.png" alt="moon image">
+      </div>
+      <div class="image-data">
+        <div class="destination-list">
+          <ul>
+            <li>Moon</li>
+            <li>Mars</li>
+            <li>Europa</li>
+            <li>Titan</li>
+          </ul>
+        </div>
+        <p style="color: #FFF;
+        font-family: Bellefair;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px;">MOON</p>
+        <p class="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <hr>
+        <div class="dataContainer">
+          <p class="info">AVG. DISTANCE<br>384,400 km</p>
+          <p class="info">EST. TRAVEL TIME<br>3 DAYS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
