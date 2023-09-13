@@ -16,3 +16,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+
+#screenshot 
+![Uploading image.png…]()
