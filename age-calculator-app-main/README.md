@@ -21,11 +21,12 @@
 This project involves creating an Age Calculator web application. Users can input their birthdate, and the app will calculate their current age in years, months, and days.
 
 ### Screenshot
+![image](https://github.com/Abhishekshah007/FrontendMentor-Challenges/assets/52561897/f65ed85c-f8c4-41be-8479-307061e91852)
 
 
 ### Links
 
-- [Live Demo]
+- https://abhishekshah007.github.io/FrontendMentor-Challenges/age-calculator-app-main/
 
 ## My Process
 
