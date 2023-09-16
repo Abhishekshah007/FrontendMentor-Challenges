@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Age Calculator App</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2%;
+            background: #fff;
+            border-radius: 5% 5% 20% 5%;
+        }
+
+        .input-field {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .inputItem {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 50px;
+            width: 110px;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 5%;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            color: hsl(0, 1%, 44%);
+        }
+
+        .actionBtn {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 75%;
+            margin-right: 20px;
+        }
+
+        .actionIcon {
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border-radius: 50%;
+            background: hsl(259, 100%, 65%);
+        }
+
+        p {
+            font-size: 5rem;
+            font-weight: 800;
+            font-style: italic;
+            margin: 0;
+            line-height: 80px;
+        }
+
+        .resultContainer {
+            padding: 40px;
+        }
+
+        span {
+            color: hsl(259, 100%, 65%);
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dayInput = document.getElementById("day");
+    const monthInput = document.getElementById("month");
+    const yearInput = document.getElementById("year");
+
+    const currentDay = document.getElementById("currentDay");
+    const currentMonth = document.getElementById("currentMonth");
+    const currentYear = document.getElementById("currentYear");
+
+    const calcBtn = document.getElementById("ageBtn");
+
+    const myAge = () => {
+        // Get values from input fields
+        const day = parseInt(dayInput.value);
+        const month = parseInt(monthInput.value);
+        const year = parseInt(yearInput.value);
+
+        // Validate input values
+        if (!isValidDate(day, month, year)) {
+            alert("Invalid date. Please enter a valid date.");
+            return;
+        }
+
+        const currentDate = new Date();
+
+        // Calculate age in years, months, and days
+        const ageInMilliseconds = currentDate - new Date(year, month - 1, day);
+        const ageDate = new Date(ageInMilliseconds);
+        const ageYears = ageDate.getUTCFullYear() - 1970;
+        const ageMonths = ageDate.getUTCMonth();
+        const ageDays = ageDate.getUTCDate() - 1; // Subtract 1 because getUTCDate() starts from 1
+
+        currentYear.innerText = ageYears;
+        currentMonth.innerText = ageMonths;
+        currentDay.innerText = ageDays;
+    }
+
+    calcBtn.addEventListener("click", myAge);
+
+    // Function to validate date input
+    function isValidDate(day, month, year) {
+          // Convert input values to numbers
+          const dayNum = parseInt(day);
+          const monthNum = parseInt(month);
+          const yearNum = parseInt(year);
+
+          // Check if values are within valid ranges
+          if (
+              isNaN(dayNum) ||
+              isNaN(monthNum) ||
+              isNaN(yearNum) ||
+              dayNum < 1 || dayNum > 31 || // Adjust these ranges as needed
+              monthNum < 1 || monthNum > 12 || // Adjust these ranges as needed
+              yearNum < 1900 // Adjust the minimum year as needed
+          ) {
+              return false;
+          }
+
+          return true;
+    }
+});
+</script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="input-field" id="input-ids">
+            <div class="inputItem">
+                <label for="day">DAY</label><br>
+                <input type="number" name="day" id="day" placeholder="DD"  aria-required="true" minlength="1" maxlength="2">
+            </div>
+            <div class="inputItem">
+                <label for="month">MONTH</label><br>
+                <input type="number" name="month" id="month" placeholder="MM" aria-required="true" minlength="1" maxlength="2">
+            </div>
+            <div class="inputItem">
+                <label for="year">YEAR</label><br>
+                <input type="number" name="year" id="year" placeholder="YYYY" aria-required="true" minlength="4" maxlength="4">
+            </div>
+        </div>
+        <div class="actionBtn" >
+            <hr>
+            <div class="actionIcon" id="ageBtn">
+                <img src="./assets/images/icon-arrow.svg" alt="actionBtn">
+            </div>
+        </div>
+        <div class="resultContainer" id="resultContainer">
+            <p><span id="currentYear">--</span> years</p>
+            <p><span id="currentMonth">--</span> months</p>
+            <p><span id="currentDay">--</span> days</p>
+        </div>
+    </div>
+    <div class="attribution" style="text-align: center;">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Abhishek Shah</a>.
+    </div>
+</body>
+</html>
