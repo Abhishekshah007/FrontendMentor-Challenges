@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../Navbar/__Header";
 import SearchAndFilter from "../SearchBarAndFillter/__searchAndFilter";
 import data from "../../assets/data.json";
-import "./SingleCountry.css"; // External CSS file for styling
+import "./styling.css"; // External CSS file for styling
 
 export default function SingleCountry() {
   const { id } = useParams();
