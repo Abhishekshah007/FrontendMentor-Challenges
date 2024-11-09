@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../Navbar/__Header";
 import SearchAndFilter from "../SearchBarAndFillter/__searchAndFilter";
 import data from "../../assets/data.json";
+import "./SingleCountry.css"; // External CSS file for styling
 
 export default function SingleCountry() {
   const { id } = useParams();
@@ -24,21 +25,15 @@ export default function SingleCountry() {
       <SearchAndFilter />
 
       {singleCountry ? (
-        <div
-          className="singleContainer"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <div className="imgContainer">
+        <div className="single-container">
+          <div className="img-container">
             <img
               src={singleCountry.flags.png}
               alt={singleCountry.name.common}
+              className="country-flag"
             />
           </div>
-          <div className="countryData">
+          <div className="country-data">
             <h3>{singleCountry.name.common}</h3>
             <p>
               <span>Population: </span>
