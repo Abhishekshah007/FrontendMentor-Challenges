@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,16 +6,33 @@
     background: hsl(0, 0%, 100%);
     color: black;
     font-family: 'Nunito Sans', sans-serif;
-padding: 2%;
+    padding: 1.5% 3%;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-ion-icon{
-    font-size: 25px;
+.navbar h1 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
-@media (max-width:400px) {
-    h1{
-        font-size: medium;
+.navbar p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ion-icon {
+    font-size: 1.5rem;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .navbar h1 {
+        font-size: 1.2rem;
     }
 }
