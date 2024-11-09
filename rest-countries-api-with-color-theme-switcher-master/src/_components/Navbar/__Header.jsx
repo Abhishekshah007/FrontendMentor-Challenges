@@ -4,24 +4,23 @@ import '../Navbar/__NavbarStyle.css';
 function __Header() {
   const [nightMode, setNightMode] = useState(false);
 
-  const dark = {
+  const darkModeStyle = {
     backgroundColor: 'black',
     color: 'white',
   };
 
   const toggleDarkMode = () => {
-    setNightMode(!nightMode); // Toggle the nightMode state
+    setNightMode(!nightMode);
   };
 
   return (
-    <>
-      <div className="navbar" style={nightMode ? dark : {}}>
-        <h1>Where in the world?</h1>
-        <p onClick={toggleDarkMode}>
-          <ion-icon name={nightMode ? 'moon' : 'moon-outline'}></ion-icon> Dark Mode
-        </p>
-      </div>
-    </>
+    <div className="navbar" style={nightMode ? darkModeStyle : {}}>
+      <h1>Where in the world?</h1>
+      <p onClick={toggleDarkMode}>
+        <ion-icon name={nightMode ? 'moon' : 'moon-outline'}></ion-icon>
+        {nightMode ? ' Light Mode' : ' Dark Mode'}
+      </p>
+    </div>
   );
 }
 
